@@ -1,0 +1,37 @@
+# depslib dependency file v1.0
+1519750370 source:c:\users\fabio\desktop\prog\aula_3\ex1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"lista.c"
+
+1519686444 c:\users\fabio\desktop\prog\aula_3\ex1\lista.c
+	"lista.h"
+	<string.h>
+	<stdlib.h>
+
+1519686444 c:\users\fabio\desktop\prog\aula_3\ex1\lista.h
+
+1519686444 source:c:\users\fabio\onedrive\ambiente de trabalho\prog\aula_3\ex1\lista.c
+	"lista.h"
+	<string.h>
+	<stdlib.h>
+
+1519686444 c:\users\fabio\onedrive\ambiente de trabalho\prog\aula_3\ex1\lista.h
+
+1520989931 source:c:\users\fabio\onedrive\ambiente de trabalho\prog\aula_3\ex1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"lista.h"
+
+1519690044 source:c:\users\fabio\onedrive\ambiente de trabalho\2º semestre\prog\aula_3\ex1\lista.c
+	"lista.h"
+	<string.h>
+	<stdlib.h>
+
+1519690044 c:\users\fabio\onedrive\ambiente de trabalho\2º semestre\prog\aula_3\ex1\lista.h
+
+1530459885 source:c:\users\fabio\onedrive\ambiente de trabalho\2º semestre\prog\aula_3\ex1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"lista.h"
+

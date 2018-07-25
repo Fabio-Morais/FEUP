@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1524587581 source:c:\users\fabio\onedrive\ambiente de trabalho\prog\aula_8\ex1\tabdispersao.c
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+	"tabdispersao.h"
+
+1524091672 c:\users\fabio\onedrive\ambiente de trabalho\prog\aula_8\ex1\tabdispersao.h
+
+1524587727 source:c:\users\fabio\onedrive\ambiente de trabalho\prog\aula_8\ex1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"tabdispersao.h"
+	"lista.h"
+	<time.h>
+
+1519342904 source:c:\users\fabio\onedrive\ambiente de trabalho\prog\aula_8\ex1\lista.c
+	"lista.h"
+	<string.h>
+	<stdlib.h>
+
+1519342908 c:\users\fabio\onedrive\ambiente de trabalho\prog\aula_8\ex1\lista.h
+

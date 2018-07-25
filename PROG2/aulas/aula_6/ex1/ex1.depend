@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1524265550 source:c:\users\fabio\onedrive\ambiente de trabalho\prog\aula_6\ex1\avl.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"avl.h"
+
+1524265155 c:\users\fabio\onedrive\ambiente de trabalho\prog\aula_6\ex1\avl.h
+
+1527529158 source:c:\users\fabio\onedrive\ambiente de trabalho\prog\aula_6\ex1\bst.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"bst.h"
+
+1522765752 c:\users\fabio\onedrive\ambiente de trabalho\prog\aula_6\ex1\bst.h
+
+1527528449 source:c:\users\fabio\onedrive\ambiente de trabalho\prog\aula_6\ex1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"bst.h"
+	"avl.h"
+

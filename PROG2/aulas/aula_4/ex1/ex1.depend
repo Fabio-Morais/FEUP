@@ -1,0 +1,93 @@
+# depslib dependency file v1.0
+1458906358 source:c:\users\fabio\onedrive\ambiente de trabalho\prog\aula_4\armazem.c
+	"armazem.h"
+	<stdio.h>
+	<stdlib.h>
+
+1458906358 c:\users\fabio\onedrive\ambiente de trabalho\prog\aula_4\armazem.h
+	"contentor.h"
+	"fila_contentores.h"
+	"pilha_contentores.h"
+
+1458906358 c:\users\fabio\onedrive\ambiente de trabalho\prog\aula_4\contentor.h
+
+1458906358 c:\users\fabio\onedrive\ambiente de trabalho\prog\aula_4\fila_contentores.h
+	"pilha_contentores.h"
+
+1458906358 c:\users\fabio\onedrive\ambiente de trabalho\prog\aula_4\pilha_contentores.h
+	"contentor.h"
+
+1520891828 source:c:\users\fabio\onedrive\ambiente de trabalho\prog\aula_4\contentor.c
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	"contentor.h"
+
+1458906358 source:c:\users\fabio\onedrive\ambiente de trabalho\prog\aula_4\fila_contentores.c
+	"fila_contentores.h"
+	<stdlib.h>
+
+1520615450 source:c:\users\fabio\onedrive\ambiente de trabalho\prog\aula_4\pilha.c
+	"pilha.h"
+	<stdlib.h>
+	<string.h>
+	<limits.h>
+
+1520613378 c:\users\fabio\onedrive\ambiente de trabalho\prog\aula_4\pilha.h
+
+1458906358 source:c:\users\fabio\onedrive\ambiente de trabalho\prog\aula_4\pilha_contentores.c
+	"pilha_contentores.h"
+	<stdlib.h>
+
+1520891678 source:c:\users\fabio\onedrive\ambiente de trabalho\prog\aula_4\teste_armazem.c
+	<stdio.h>
+	<stdlib.h>
+	"fila_contentores.h"
+	"armazem.h"
+
+1520954491 source:c:\users\fabio\onedrive\ambiente de trabalho\prog\aula_4\ex1\armazem.c
+	"armazem.h"
+	<stdio.h>
+	<stdlib.h>
+
+1458906358 c:\users\fabio\onedrive\ambiente de trabalho\prog\aula_4\ex1\armazem.h
+	"contentor.h"
+	"fila_contentores.h"
+	"pilha_contentores.h"
+
+1458906358 c:\users\fabio\onedrive\ambiente de trabalho\prog\aula_4\ex1\contentor.h
+
+1520956632 c:\users\fabio\onedrive\ambiente de trabalho\prog\aula_4\ex1\fila_contentores.h
+	"pilha_contentores.h"
+
+1458906358 c:\users\fabio\onedrive\ambiente de trabalho\prog\aula_4\ex1\pilha_contentores.h
+	"contentor.h"
+
+1520954033 source:c:\users\fabio\onedrive\ambiente de trabalho\prog\aula_4\ex1\contentor.c
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	"contentor.h"
+
+1458906358 source:c:\users\fabio\onedrive\ambiente de trabalho\prog\aula_4\ex1\fila_contentores.c
+	"fila_contentores.h"
+	<stdlib.h>
+
+1520615450 source:c:\users\fabio\onedrive\ambiente de trabalho\prog\aula_4\ex1\pilha.c
+	"pilha.h"
+	<stdlib.h>
+	<string.h>
+	<limits.h>
+
+1520613378 c:\users\fabio\onedrive\ambiente de trabalho\prog\aula_4\ex1\pilha.h
+
+1458906358 source:c:\users\fabio\onedrive\ambiente de trabalho\prog\aula_4\ex1\pilha_contentores.c
+	"pilha_contentores.h"
+	<stdlib.h>
+
+1520891678 source:c:\users\fabio\onedrive\ambiente de trabalho\prog\aula_4\ex1\teste_armazem.c
+	<stdio.h>
+	<stdlib.h>
+	"fila_contentores.h"
+	"armazem.h"
+

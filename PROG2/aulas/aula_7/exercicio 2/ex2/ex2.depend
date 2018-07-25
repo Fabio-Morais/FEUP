@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1524264116 source:c:\users\fabio\onedrive\ambiente de trabalho\prog\aula_7\exercicio 2\grafo.c
+	<stdio.h>
+	<stdlib.h>
+	"grafo.h"
+
+1523613254 c:\users\fabio\onedrive\ambiente de trabalho\prog\aula_7\exercicio 2\grafo.h
+	"vetor.h"
+
+1523443080 c:\users\fabio\onedrive\ambiente de trabalho\prog\aula_7\exercicio 2\vetor.h
+
+1524263995 source:c:\users\fabio\onedrive\ambiente de trabalho\prog\aula_7\exercicio 2\teste_grafo.c
+	"grafo.h"
+	<stdio.h>
+
+1523613824 source:c:\users\fabio\onedrive\ambiente de trabalho\prog\aula_7\exercicio 2\vetor.c
+	"vetor.h"
+	<string.h>
+	<stdlib.h>
+	<stdio.h>
+

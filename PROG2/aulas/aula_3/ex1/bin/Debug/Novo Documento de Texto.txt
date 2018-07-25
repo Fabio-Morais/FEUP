@@ -1,0 +1,70 @@
+lista *lista_pesquisa_substring(lista * lst, char *substring){  // ex: min, para minecraft
+lista * lst2;
+l_elemento * l;
+char *x;
+
+lst2= lista_nova();
+
+l=lst->inicio;
+
+while(l!=NULL){
+
+if(strstr(l->str,substring)!=NULL) {
+    lista_insere(lst2,l->str,NULL);
+}
+l= l->proximo;
+
+}
+
+return lst2; 
+}
+
+
+FILE *p;
+lista* lst;
+lista * lst2;
+char c[100], pes[50];
+int n=0, i;
+p= fopen("arquivo.txt", "r");
+
+if (p==NULL)
+    printf("\nerror, file don't exist\n");
+else {
+    printf("\t\t\t\t----------File opened----------\n\n\n");
+
+
+lst=lista_nova();
+
+
+while ((fgets(c, sizeof(c),p)) )
+{
+    if(strcmp(c,"\n")){
+        printf("\n(mandou para o ficheiro)\n");
+        printf("\n pos:%d ->frase lida:  %s\n",n,c);
+        lista_insere(lst , c,NULL);
+                n++;
+        }
+}
+printf("\n%d linhas\n",n);
+printf("\n\ndigite o nome que quer pesquisar:  ");
+scanf("%s", pes);
+
+lst2=lista_pesquisa_substring(lst,pes);
+
+for (i=0; i<lista_tamanho(lst2); i++){
+printf("\n\n%s\n",lista_elemento(lst2,i)->str );
+}
+
+FILE *ps2;
+lista * lst3;
+lst3=lista_pesquisa_substring(lst, "PS2");
+ps2= fopen("jogos2.txt", "w");
+
+for (i=0; i<lista_tamanho(lst3); i++){
+fprintf(ps2 ,lista_elemento(lst3,i)->str);
+}
+
+fclose(ps2);
+
+} //trabalhar com ficheiro
+fclose(p);
