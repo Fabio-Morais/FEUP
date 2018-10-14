@@ -9,9 +9,6 @@
  *      Estado 4-> LUZ VERDE SUL
  *      Estado 5-> LUZ AMARELA SUL
  *      Estado 6-> LUZ VERMELHA SUL
- *
- *      Estado 10 -> EMERGENCIA DESATIVADA
- *      Estado 11 -> EMERGENCIA ATIVADA
  *******************************************/
 
 #include <avr/io.h>
