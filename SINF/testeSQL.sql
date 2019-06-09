@@ -41,25 +41,24 @@ FROM partido
 GROUP BY partido.nome
 HAVING AVG(candidato.idade)>45
 
+
+
+
 /* ****** ******************************* ************************ *************** ***/
 
 /*
 5  Que autarquias não tiveram nenhum candidato do 'Partido do Meio'?
 */
 
-  SELECT cod, designacao
-  FROM (
-  SELECT cod, designacao, SUM(case partido.nome 
-                                WHEN 'Partido do Meio' 
-                                THEN 1
-                                else 0
-                                END
-                               ) as aux
+SELECT cod, designacao
+FROM (
+  SELECT cod, designacao, SUM(case partido.nome WHEN 'Partido do Meio' THEN 1
+												else 0 END) as aux
  FROM autarquia 
         LEFT JOIN candidato USING (cod)
         LEFT JOIN partido USING(sigla)
   GROUP BY designacao, cod) AS tab
-  WHERE aux=0
+WHERE aux=0
 
 /*OU*/
 SELECT cod,designacao
@@ -71,6 +70,18 @@ FROM  autarquia
     LEFT JOIN partido USING(sigla)
 WHERE partido.nome = 'Partido do Meio'
 GROUP BY cod,designacao
+
+/*OU*/
+SELECT autarquia.cod, autarquia.designacao FROM
+
+(SELECT candidato.cod, partido.nome FROM candidato 
+INNER JOIN partido
+ON candidato.sigla = partido.sigla
+WHERE partido.nome = 'Partido do Meio') as s1
+
+RIGHT JOIN autarquia
+ON autarquia.cod = s1.cod
+WHERE s1.cod IS NULL
 
 /* ****** ******************************* ************************ *************** ***/
 
@@ -92,7 +103,7 @@ FROM autarquia
 	GROUP BY designacao, votou, cod
 	HAVING votou='false') AS tab USING(cod)
 
-
+/*OU*/
 SELECT autarquia.designacao,COALESCE(quantidade,0)
 FROM autarquia
 	LEFT JOIN (
@@ -118,7 +129,7 @@ HAVING count(*)=(SELECT MAX(tab.co)
     GROUP BY designacao) AS tab)
 
 
-
+/*OU*/
 select designacao, case 
 					when count is null then 0
                     else count
@@ -155,7 +166,7 @@ ORDER BY maxim DESC
 LIMIT 1
 
 
-
+/*OU*/
 select distinct cod
 from
   candidato
