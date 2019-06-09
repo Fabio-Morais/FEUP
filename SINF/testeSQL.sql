@@ -53,7 +53,7 @@ HAVING AVG(candidato.idade)>45
 SELECT cod, designacao
 FROM (
   SELECT cod, designacao, SUM(case partido.nome WHEN 'Partido do Meio' THEN 1
-												else 0 END) as aux
+						else 0 END) as aux
  FROM autarquia 
         LEFT JOIN candidato USING (cod)
         LEFT JOIN partido USING(sigla)
@@ -130,8 +130,7 @@ HAVING count(*)=(SELECT MAX(tab.co)
 
 
 /*OU*/
-select designacao, case 
-					when count is null then 0
+select designacao, case when count is null then 0
                     else count
                    end
 from autarquia
